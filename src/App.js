@@ -1,23 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Section from "./Section";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Section
+        title="Model 3"
+        tagline="Order online for touchless delivery"
+        leftBtn=" Custom Order"
+        rightBtn="Existing Inventory"
+        bgImage="model-m3.jpg"
+        arrow={true}
+      />
+      <Section
+        title="Model Y"
+        tagline="Order online for touchless delivery"
+        leftBtn=" Custom Order"
+        rightBtn="Existing Inventory"
+        bgImage="ModelY.jpg"
+      />
+      <Section
+        title="Model S"
+        tagline="Order online for touchless delivery"
+        leftBtn=" Custom Order"
+        rightBtn="Existing Inventory"
+        bgImage="model-s.jpg"
+      />
+      <Section
+        title="Model X"
+        tagline="Order online for touchless delivery"
+        leftBtn=" Custom Order"
+        rightBtn="Existing Inventory"
+        bgImage="model-x.jpg"
+      />
+      <Section
+        title="Solar Panels"
+        tagline=" Lower cost solar panels in America"
+        leftBtn=" Order Now"
+        rightBtn=" Learn more"
+        bgImage="SolarPanels.jpg"
+      />
+      <Section
+        title=" Solar Roof"
+        tagline="Produce clean energy from your Roof"
+        leftBtn="Order Now"
+        rightBtn="Learn more"
+        bgImage="solar.jpg"
+      />
+      <Section
+        title=" Accesories"
+        leftBtn=" Order Now"
+        bgImage="accesories.jpg"
+      />
     </div>
   );
 }
